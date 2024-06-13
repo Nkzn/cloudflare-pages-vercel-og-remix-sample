@@ -3,6 +3,9 @@ import vercelOGPagesPlugin from "@cloudflare/pages-plugin-vercel-og";
 export const onRequest = vercelOGPagesPlugin({
 	imagePathSuffix: "/og-image.png",
 	component: ({ pathname }) => {
+    // pathnameから最後の要素を抜き出す
+    const paths = pathname.split("/");
+    const slug = paths[paths.length - 1];
 		return (
       <div
         style={{
@@ -10,10 +13,13 @@ export const onRequest = vercelOGPagesPlugin({
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          width: "100%",
+          height: "100%",
+          // backgroundImage: 'url("/img/ogp-background.png")'
         }}
       >
         <h1>This is my article</h1>
-        <p>{pathname}</p>
+        <p>slug: {slug}</p>
       </div>
     );
 	},
