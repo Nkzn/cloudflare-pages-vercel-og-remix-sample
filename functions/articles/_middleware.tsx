@@ -15,10 +15,10 @@ export const onRequest = vercelOGPagesPlugin({
           justifyContent: "center",
           width: "100%",
           height: "100%",
-          // backgroundImage: 'url("/img/ogp-background.png")'
+          backgroundImage: 'url("/img/ogp-background.png")'
         }}
       >
-        <h1 style={{ fontSize: "80px" }}>
+        <h1 style={{ fontSize: "40px" }}>
           This is {slug} article
         </h1>
       </div>
