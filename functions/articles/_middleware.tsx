@@ -18,8 +18,9 @@ export const onRequest = vercelOGPagesPlugin({
           // backgroundImage: 'url("/img/ogp-background.png")'
         }}
       >
-        <h1 className="text-4xl">This is my article</h1>
-        <p>slug: {slug}</p>
+        <h1 style={{ fontSize: "24px" }}>
+          This is {slug} article
+        </h1>
       </div>
     );
 	},
