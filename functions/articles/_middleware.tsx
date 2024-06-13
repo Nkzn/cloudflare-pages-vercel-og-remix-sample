@@ -18,7 +18,7 @@ export const onRequest = vercelOGPagesPlugin({
           backgroundImage: 'url("https://cloudflare-pages-vercel-og-remix-sample.pages.dev/img/ogp-background.png")'
         }}
       >
-        <h1 style={{ fontSize: "40px" }}>
+        <h1 style={{ fontSize: "30px" }}>
           This is {slug} article
         </h1>
       </div>
